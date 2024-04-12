@@ -55,19 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\A200002851\\.nuget\\packages\\": {}
+    "C:\\Users\\Haind\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj",
+      "projectUniqueName": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\libs.csproj",
       "projectName": "libs",
-      "projectPath": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj",
-      "packagesPath": "C:\\Users\\A200002851\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\obj\\",
+      "projectPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\libs.csproj",
+      "packagesPath": "C:\\Users\\Haind\\.nuget\\packages\\",
+      "outputPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\A200002851\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Haind\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -117,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

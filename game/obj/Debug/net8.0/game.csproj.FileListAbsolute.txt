@@ -37,3 +37,23 @@ C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\bin\De
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.csproj.Up2Date
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\ref\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.exe
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.deps.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\libs.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\libs.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.sourcelink.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.Up2Date
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\refint\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
