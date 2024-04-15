@@ -67,7 +67,14 @@ public class GameObject : IGameObject, IMovement
             return;
         }
         if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Box) {
-            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);
+            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);      
+        }
+        
+        if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box &&
+            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Goal) {
+            GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Green;   
+        } else if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box){
+            GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Red;
         }
         _prevPosX = _posX;
         _prevPosY = _posY;
