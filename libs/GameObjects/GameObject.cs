@@ -63,6 +63,12 @@ public class GameObject : IGameObject, IMovement
     }
 
     public void Move(int dx, int dy) {
+        if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Obstacle) {
+            return;
+        }
+        if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Box) {
+            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);
+        }
         _prevPosX = _posX;
         _prevPosY = _posY;
         _posX += dx;
