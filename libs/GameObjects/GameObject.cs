@@ -3,6 +3,7 @@
 public class GameObject : IGameObject, IMovement
 {
     private char _charRepresentation = '#';
+
     private ConsoleColor _color;
 
     private int _posX;
@@ -62,23 +63,37 @@ public class GameObject : IGameObject, IMovement
         return _prevPosX;
     }
 
-    public void Move(int dx, int dy) {
+    public bool Move(int dx, int dy) {
+        bool move = true;
         if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Obstacle) {
-            return;
+            return false;
         }
         if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Box) {
-            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);      
+            move = GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);
         }
-        
         if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box &&
             GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Goal) {
-            GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Green;   
+            GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Green;
         } else if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box){
             GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Red;
         }
-        _prevPosX = _posX;
-        _prevPosY = _posY;
-        _posX += dx;
-        _posY += dy;
+        if(move) {
+            _prevPosX = _posX;
+            _prevPosY = _posY;
+            _posX += dx;
+            _posY += dy;
+            CheckWin();
+        }
+        return move;
+    }
+
+    public void CheckWin() {
+        if(GameEngine.Instance.GetBoxes().All(x => x.Color == ConsoleColor.Green)) {
+            Console.Clear();
+            Console.WriteLine("You win!");
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+            Environment.Exit(0);
+        }
     }
 }
