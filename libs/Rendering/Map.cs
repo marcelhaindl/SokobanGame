@@ -58,12 +58,13 @@ public class Map {
         int posX = gameObject.PosX;
         int prevPosY = gameObject.GetPrevPosY();
         int prevPosX = gameObject.GetPrevPosX();
-        
-        if (prevPosX >= 0 && prevPosX < _mapWidth &&
+
+        // ???
+        /*if (prevPosX >= 0 && prevPosX < _mapWidth &&
                 prevPosY >= 0 && prevPosY < _mapHeight)
         {
             GameObjectLayer[prevPosY, prevPosX] = new Floor();
-        }
+        }*/
 
         if (posX >= 0 && posX < _mapWidth &&
                 posY >= 0 && posY < _mapHeight)

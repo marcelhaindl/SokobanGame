@@ -23,6 +23,8 @@ public static class FileHandler
 
     public static dynamic ReadJson()
     {
+        string filePath = Environment.GetEnvironmentVariable("GAME_SETUP_PATH");
+
         if (string.IsNullOrEmpty(filePath))
         {
             throw new InvalidOperationException("JSON file path not provided in environment variable");

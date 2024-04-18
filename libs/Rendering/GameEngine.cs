@@ -37,6 +37,10 @@ public sealed class GameEngine
         return map;
     }
 
+    public void clearGameobjects() {
+        gameObjects.Clear();
+    }
+
     public GameObject GetFocusedObject(){
         return _focusedObject;
     }
@@ -57,7 +61,6 @@ public sealed class GameEngine
         }
         
         _focusedObject = gameObjects.OfType<Player>().First();
-
     }
 
     public void Render() {
@@ -86,6 +89,12 @@ public sealed class GameEngine
         return gameObjectFactory.CreateGameObject(obj);
     }
 
+    //Function to get all goal objects
+    public List<GameObject> GetBoxes()
+    {
+        return gameObjects.Where(x => x.Type == GameObjectType.Box).ToList();
+    }
+
     public void AddGameObject(GameObject gameObject){
         gameObjects.Add(gameObject);
     }
@@ -96,6 +105,7 @@ public sealed class GameEngine
         {
             map.Set(obj);
         });
+        map.Set(_focusedObject);
     }
 
     private void DrawObject(GameObject gameObject){
