@@ -1,6 +1,6 @@
 ﻿namespace libs;
 
-public class GameObject : IGameObject, IMovement
+public class GameObject : IGameObject, IMovement, ICloneable
 {
     private char _charRepresentation = '#';
 
@@ -8,30 +8,34 @@ public class GameObject : IGameObject, IMovement
 
     private int _posX;
     private int _posY;
-    
+
     private int _prevPosX;
     private int _prevPosY;
 
     public GameObjectType Type;
 
-    public GameObject() {
+    public GameObject()
+    {
         this._posX = 5;
         this._posY = 5;
         this._color = ConsoleColor.Gray;
     }
 
-    public GameObject(int posX, int posY){
+    public GameObject(int posX, int posY)
+    {
         this._posX = posX;
         this._posY = posY;
     }
 
-    public GameObject(int posX, int posY, ConsoleColor color){
+    public GameObject(int posX, int posY, ConsoleColor color)
+    {
         this._posX = posX;
         this._posY = posY;
         this._color = color;
     }
 
-    public GameObject(GameObject gameObject) {
+    public GameObject(GameObject gameObject)
+    {
         this.Type = gameObject.Type;
         this._posX = gameObject.PosX;
         this._posY = gameObject.PosY;
@@ -39,9 +43,15 @@ public class GameObject : IGameObject, IMovement
         this._charRepresentation = gameObject.CharRepresentation;
     }
 
+    public object Clone()
+    {
+        return MemberwiseClone();
+    }
+
+
     public char CharRepresentation
     {
-        get { return _charRepresentation ; }
+        get { return _charRepresentation; }
         set { _charRepresentation = value; }
     }
 
@@ -63,41 +73,55 @@ public class GameObject : IGameObject, IMovement
         set { _posY = value; }
     }
 
-    public int GetPrevPosY() {
+    public int GetPrevPosY()
+    {
         return _prevPosY;
     }
-    
-    public int GetPrevPosX() {
+
+    public int GetPrevPosX()
+    {
         return _prevPosX;
     }
 
-    public bool Move(int dx, int dy) {
+    public bool Move(int dx, int dy)
+    {
         bool move = true;
-        if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Obstacle) {
+        if (GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Obstacle)
+        {
             return false;
         }
-        if(GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Box) {
+        if (GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Box)
+        {
             move = GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Move(dx, dy);
         }
-        if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box &&
-            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Goal) {
+        if (GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box &&
+            GameEngine.Instance.GetMap().Get(_posY + dy, _posX + dx).Type == GameObjectType.Goal)
+        {
             GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Green;
-        } else if(GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box){
+        }
+        else if (GameEngine.Instance.GetMap().Get(_posY, _posX).Type == GameObjectType.Box)
+        {
             GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Red;
         }
-        if(move) {
-            GameEngine.Instance.SaveCurrentState();
+        if (move)
+        {
             _prevPosX = _posX;
             _prevPosY = _posY;
             _posX += dx;
             _posY += dy;
+            if (GameEngine.Instance.GetMap().Get(_posY - dy, _posX - dx).Type == GameObjectType.Player)
+            {
+                GameEngine.Instance.SaveCurrentState();
+            }
             CheckWin();
         }
         return move;
     }
 
-    public void CheckWin() {
-        if(GameEngine.Instance.GetBoxes().All(x => x.Color == ConsoleColor.Green)) {
+    public void CheckWin()
+    {
+        if (GameEngine.Instance.GetBoxes().All(x => x.Color == ConsoleColor.Green))
+        {
             Console.Clear();
             Console.WriteLine("You win!");
             Console.WriteLine("Press any key to exit...");
