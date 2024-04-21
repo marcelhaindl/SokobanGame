@@ -37,6 +37,7 @@ C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\bin\De
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.csproj.Up2Date
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\ref\game.dll
+<<<<<<< HEAD
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.exe
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.deps.json
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -57,3 +58,83 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\refint
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.pdb
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\ref\game.dll
+=======
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.exe
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.deps.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\libs.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\libs.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.sourcelink.json
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.csproj.Up2Date
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\refint\game.dll
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.pdb
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.exe
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.deps.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.runtimeconfig.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\libs.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\libs.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.csproj.Up2Date
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\refint\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\obj\Debug\net8.0\ref\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\game.exe
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\game.deps.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\game.runtimeconfig.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\libs.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\bin\Debug\net8.0\libs.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.csproj.Up2Date
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\refint\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame-Finished_Prblem_Setup json\game\obj\Debug\net8.0\ref\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\game.exe
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\game.deps.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\game.runtimeconfig.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\libs.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\bin\Debug\net8.0\libs.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.sourcelink.json
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.csproj.Up2Date
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\refint\game.dll
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.pdb
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\ref\game.dll
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3

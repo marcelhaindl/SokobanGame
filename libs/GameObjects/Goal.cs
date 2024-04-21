@@ -1,9 +1,9 @@
 namespace libs;
 
 public class Goal : GameObject {
-    public Goal () : base() {
-        this.Type = GameObjectType.Goal;
-        this.CharRepresentation = '#';
-        this.Color = ConsoleColor.Red;
+    public Goal () : base(){
+        Type = GameObjectType.Goal;
+        CharRepresentation = 'X';
+        Color = ConsoleColor.Cyan;
     }
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\sokubanGame\\libs\\libs.csproj": {}
   },
   "projects": {
@@ -12,13 +13,30 @@
         "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\sokubanGame\\libs\\libs.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\sokubanGame\\libs\\obj\\",
+=======
+    "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj",
+        "projectName": "libs",
+        "projectPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj",
+        "packagesPath": "C:\\Users\\Mesza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\obj\\",
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+          "C:\\Users\\Mesza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +83,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
         }
       }
     }
