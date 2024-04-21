@@ -38,8 +38,8 @@ public class Player : GameObject
         prevPosX = GetPrevPosX();
         prevPosY = GetPrevPosY();
         
-        posX = PosX;
-        posY = PosY;
+        posX = PosX();
+        posY = PosY();
 
         prevPosX = posX;
         prevPosY = posY;

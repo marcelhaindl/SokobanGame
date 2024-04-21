@@ -1,3 +1,3 @@
-- Player collision with walls and obstacles
+- Player collision with obstacles
 - Player push box
 - Implement at least 1 level
