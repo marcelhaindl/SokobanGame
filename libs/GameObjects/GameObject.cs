@@ -31,6 +31,14 @@ public class GameObject : IGameObject, IMovement
         this._color = color;
     }
 
+    public GameObject(GameObject gameObject) {
+        this.Type = gameObject.Type;
+        this._posX = gameObject.PosX;
+        this._posY = gameObject.PosY;
+        this._color = gameObject.Color;
+        this._charRepresentation = gameObject.CharRepresentation;
+    }
+
     public char CharRepresentation
     {
         get { return _charRepresentation ; }
@@ -78,6 +86,7 @@ public class GameObject : IGameObject, IMovement
             GameEngine.Instance.GetMap().Get(_posY, _posX).Color = ConsoleColor.Red;
         }
         if(move) {
+            GameEngine.Instance.SaveCurrentState();
             _prevPosX = _posX;
             _prevPosY = _posY;
             _posX += dx;

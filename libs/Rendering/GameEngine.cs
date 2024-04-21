@@ -30,6 +30,8 @@ public sealed class GameEngine
 
     private Map map = new Map();
 
+    private List<GameObject> savedObjects = new List<GameObject>();
+
     private List<GameObject> gameObjects = new List<GameObject>();
 
 
@@ -94,6 +96,20 @@ public sealed class GameEngine
 
     public void AddGameObject(GameObject gameObject){
         gameObjects.Add(gameObject);
+    }
+
+    public void SaveCurrentState() {
+        savedObjects.Clear();
+        gameObjects.ForEach(delegate(GameObject obj)
+        {
+            savedObjects.Add(new GameObject(obj));
+        });
+    }
+
+    public void LoadPreviousState() {
+        gameObjects.Clear();
+        gameObjects.AddRange(savedObjects);
+        _focusedObject = gameObjects.Where(x => x.Type == GameObjectType.Player).First();
     }
 
     private void PlaceGameObjects(){
