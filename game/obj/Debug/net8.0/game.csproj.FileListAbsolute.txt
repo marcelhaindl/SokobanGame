@@ -137,7 +137,6 @@ C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\refin
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.pdb
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\ref\game.dll
-<<<<<<< HEAD
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.exe
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.deps.json
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -158,6 +157,5 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\refint\
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\game.pdb
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\ref\game.dll
-=======
 >>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
 >>>>>>> 9f1699380b2527671db261a0e177fa0ea6ba0117

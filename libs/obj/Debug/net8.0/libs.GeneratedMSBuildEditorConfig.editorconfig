@@ -8,14 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = libs
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\libs\
-=======
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\
-=======
-build_property.ProjectDir = C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\libs\
->>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
->>>>>>> 9f1699380b2527671db261a0e177fa0ea6ba0117
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

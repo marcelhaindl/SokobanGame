@@ -33,17 +33,17 @@ public class Player : GameObject
         }
     }
 
-    public override void Move(int dx, int dy)
-    {
-        prevPosX = GetPrevPosX();
-        prevPosY = GetPrevPosY();
+    // public override void Move(int dx, int dy)
+    // {
+    //     prevPosX = GetPrevPosX();
+    //     prevPosY = GetPrevPosY();
         
-        posX = PosX();
-        posY = PosY();
+    //     posX = PosX();
+    //     posY = PosY();
 
-        prevPosX = posX;
-        prevPosY = posY;
-        posX += dx;
-        posY += dy;
-    }
+    //     prevPosX = posX;
+    //     prevPosY = posY;
+    //     posX += dx;
+    //     posY += dy;
+    // }
 }
