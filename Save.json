@@ -1,7 +1,7 @@
 {
   "Level": 2,
-  "PosX": 20,
-  "PosY": 8,
-  "Color": "Green",
-  "Type": "Box"
+  "PosX": 7,
+  "PosY": 4,
+  "Color": "DarkBlue",
+  "Type": "Player"
 }
