@@ -45,20 +45,20 @@ public class GameObject : IGameObject, IMovement
 
     public ConsoleColor Color
     {
-        get { return _color; }
-        set { _color = value; }
+        get { return color; }
+        set { color = value; }
     }
 
     public int PosX
     {
-        get { return _posX; }
-        set { _posX = value; }
+        get { return posX; }
+        set { posX = value; }
     }
 
     public int PosY
     {
-        get { return _posY; }
-        set { _posY = value; }
+        get { return posY; }
+        set { posY = value; }
     }
 
     public int GetPrevPosY()

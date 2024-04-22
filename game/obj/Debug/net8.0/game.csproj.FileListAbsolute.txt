@@ -37,6 +37,28 @@ C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\bin\De
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.csproj.Up2Date
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\ref\game.dll
+<<<<<<< HEAD
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.exe
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.deps.json
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.pdb
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\libs.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\libs.pdb
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.AssemblyInfo.cs
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.sourcelink.json
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.csproj.CopyComplete
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\refint\game.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.pdb
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\ref\game.dll
+=======
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.exe
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.deps.json
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -115,6 +137,7 @@ C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\refin
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.pdb
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame_Szabolcs\game\obj\Debug\net8.0\ref\game.dll
+<<<<<<< HEAD
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.exe
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.deps.json
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -135,3 +158,6 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\refint\
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\game.pdb
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\ref\game.dll
+=======
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
+>>>>>>> 9f1699380b2527671db261a0e177fa0ea6ba0117

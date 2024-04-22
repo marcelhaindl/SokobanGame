@@ -16,11 +16,14 @@ public class GameObjectFactory : IGameObjectFactory
         switch (type)
         {
             case (int)GameObjectType.Player:
+            case (int)GameObjectType.Player:
                 newObj = obj.ToObject<Player>();
                 break;
             case (int)GameObjectType.Obstacle:
+            case (int)GameObjectType.Obstacle:
                 newObj = obj.ToObject<Obstacle>();
                 break;
+            case (int)GameObjectType.Box:
             case (int)GameObjectType.Box:
                 newObj = obj.ToObject<Box>();
                 break;
