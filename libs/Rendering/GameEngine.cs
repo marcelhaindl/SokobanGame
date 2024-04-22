@@ -15,6 +15,11 @@ public sealed class GameEngine
         get
         {
             if (_instance == null)
+    public static GameEngine Instance
+    {
+        get
+        {
+            if (_instance == null)
             {
                 _instance = new GameEngine();
             }
@@ -24,6 +29,8 @@ public sealed class GameEngine
 
     private GameEngine()
     {
+    private GameEngine()
+    {
         //INIT PROPS HERE IF NEEDED
         gameObjectFactory = new GameObjectFactory();
     }
@@ -31,6 +38,8 @@ public sealed class GameEngine
     private GameObject? _focusedObject;
 
     private Map map = new Map();
+
+    private List<List<GameObject>> savedObjectsStack = new List<List<GameObject>>();
 
     private List<List<GameObject>> savedObjectsStack = new List<List<GameObject>>();
 
@@ -122,12 +131,21 @@ public sealed class GameEngine
         }
     }
 
+
     // Method to create GameObject using the factory from clients
     public GameObject CreateGameObject(dynamic obj)
     {
         return gameObjectFactory.CreateGameObject(obj);
     }
 
+    //Function to get all goal objects
+    public List<GameObject> GetBoxes()
+    {
+        return gameObjects.Where(x => x.Type == GameObjectType.Box).ToList();
+    }
+
+    public void AddGameObject(GameObject gameObject)
+    {
     //Function to get all goal objects
     public List<GameObject> GetBoxes()
     {
@@ -164,6 +182,8 @@ public sealed class GameEngine
         });
         _focusedObject = gameObjects.FirstOrDefault(x => x.Type == GameObjectType.Player);
         map.Set(_focusedObject);
+        _focusedObject = gameObjects.FirstOrDefault(x => x.Type == GameObjectType.Player);
+        map.Set(_focusedObject);
     }
 
     private void DrawObject(GameObject gameObject)
@@ -172,10 +192,13 @@ public sealed class GameEngine
         Console.ResetColor();
 
         if (gameObject != null)
+        if (gameObject != null)
         {
             Console.ForegroundColor = gameObject.Color;
             Console.Write(gameObject.CharRepresentation);
         }
+        else
+        {
         else
         {
             Console.ForegroundColor = ConsoleColor.Gray;
