@@ -53,8 +53,7 @@ public sealed class GameEngine
 
     public void Setup()
     {
-        Console.OutputEncoding = System.Text.Encoding.UTF8;
-        Console.WriteLine("Hello...");
+        Console.WriteLine("Setting up game...");
 
         try
         {
