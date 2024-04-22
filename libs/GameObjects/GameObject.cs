@@ -4,7 +4,6 @@ using System.Text.Json;
 namespace libs;
 
 public class GameObject : IGameObject, IMovement, ICloneable
-public class GameObject : IGameObject, IMovement, ICloneable
 {
     private char _charRepresentation = '#';
 
@@ -22,8 +21,6 @@ public class GameObject : IGameObject, IMovement, ICloneable
 
     public GameObject()
     {
-    public GameObject()
-    {
         this._posX = 5;
         this._posY = 5;
         this._color = ConsoleColor.Gray;
@@ -31,14 +28,11 @@ public class GameObject : IGameObject, IMovement, ICloneable
 
     public GameObject(int posX, int posY)
     {
-    public GameObject(int posX, int posY)
-    {
         this._posX = posX;
         this._posY = posY;
     }
 
-    public GameObject(int posX, int posY, ConsoleColor color)
-    {
+
     public GameObject(int posX, int posY, ConsoleColor color)
     {
         this._posX = posX;
@@ -55,37 +49,33 @@ public class GameObject : IGameObject, IMovement, ICloneable
     public char CharRepresentation
     {
         get { return _charRepresentation; }
-        get { return _charRepresentation; }
         set { _charRepresentation = value; }
     }
 
-   public ConsoleColor Color
-{
-    get { return _color; }  // Corrected from 'color' to '_color'
-    set { _color = value; } // Corrected from 'color' to '_color'
-}
-
-public int PosX
-{
-    get { return _posX; }  // Corrected from 'posX' to '_posX'
-    set { _posX = value; } // Corrected from 'posX' to '_posX'
-}
-
-public int PosY
-{
-    get { return _posY; }  // Corrected from 'posY' to '_posY'
-    set { _posY = value; } // Corrected from 'posY' to '_posY'
-}
-
-    public int GetPrevPosY()
+    public ConsoleColor Color
     {
+        get { return _color; }  // Corrected from 'color' to '_color'
+        set { _color = value; } // Corrected from 'color' to '_color'
+    }
+
+    public int PosX
+    {
+        get { return _posX; }  // Corrected from 'posX' to '_posX'
+        set { _posX = value; } // Corrected from 'posX' to '_posX'
+    }
+
+    public int PosY
+    {
+        get { return _posY; }  // Corrected from 'posY' to '_posY'
+        set { _posY = value; } // Corrected from 'posY' to '_posY'
+    }
+
+
     public int GetPrevPosY()
     {
         return _prevPosY;
     }
 
-    public int GetPrevPosX()
-    {
 
     public int GetPrevPosX()
     {

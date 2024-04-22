@@ -1,25 +1,17 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "pzuYIlCxIPhIxG5knZzYQpcUTSHKGzADKCXka/wuqF7kxndtmqE+yuEw0O697ACdE2orpLA08rUqAz/3PCfDKw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
-=======
   "dgSpecHash": "KYcg/m5p+ULLxY2/a4Y1Aq5gOp2MY/UWD1ILSepQMwK7v2yOLUFHNE/STKjgMxz4oBYqm3E7S0wM8t9DdClm5g==",
   "success": true,
   "projectFilePath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\game\\game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Haind\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
   ],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem beim Lesen der Cachedatei \"D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\game\\obj\\project.nuget.cache\": Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

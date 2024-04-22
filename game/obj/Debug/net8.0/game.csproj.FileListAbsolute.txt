@@ -38,7 +38,6 @@ C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\De
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\game\obj\Debug\net8.0\ref\game.dll
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.exe
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.deps.json
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -59,7 +58,6 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\refint
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.pdb
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\game\obj\Debug\net8.0\ref\game.dll
-=======
 =======
 >>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\bin\Debug\net8.0\game.exe
@@ -82,7 +80,6 @@ D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\refint\gam
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.pdb
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\game.genruntimeconfig.cache
 D:\fhstp\04_ss24\csharp_development\SokobanGame\game\obj\Debug\net8.0\ref\game.dll
-<<<<<<< HEAD
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.exe
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.deps.json
 C:\Users\Mesza\OneDrive\Desktop\SokobanGame-marcel\game\bin\Debug\net8.0\game.runtimeconfig.json
@@ -163,5 +160,3 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\game.ge
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\game\obj\Debug\net8.0\ref\game.dll
 >>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
 >>>>>>> 5b73e3e99fd0c3345aa66f76ca5ff8f2595d6154
-=======
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d

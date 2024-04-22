@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj",
-        "projectName": "game",
-        "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\obj\\",
-=======
     "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\game\\game.csproj": {}
   },
   "projects": {
@@ -25,38 +12,22 @@
         "projectPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\game\\game.csproj",
         "packagesPath": "C:\\Users\\Haind\\.nuget\\packages\\",
         "outputPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\game\\obj\\",
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
           "C:\\Users\\Haind\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj": {
-                "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj"
-=======
               "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\libs.csproj": {
                 "projectPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\libs.csproj"
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
               }
             }
           }
@@ -65,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -86,20 +62,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj",
-        "projectName": "libs",
-        "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\obj\\",
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -112,25 +74,14 @@
         "projectPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\libs.csproj",
         "packagesPath": "C:\\Users\\Haind\\.nuget\\packages\\",
         "outputPath": "D:\\fhstp\\04_ss24\\csharp_development\\SokobanGame\\libs\\obj\\",
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
           "C:\\Users\\Haind\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -143,6 +94,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -170,11 +126,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
->>>>>>> a0107334cdb57fc0c2bfa855ced4a1975799c06d
         }
       }
     }
