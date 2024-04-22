@@ -23,6 +23,21 @@ C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\libs\bin\De
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\libs\bin\Debug\net8.0\libs.dll
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\libs\bin\Debug\net8.0\libs.pdb
 C:\Users\A200002851\OneDrive - Deutsche Telekom AG\Projects\lesson07\libs\obj\Debug\net8.0\ref\libs.dll
+<<<<<<< HEAD
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\bin\Debug\net8.0\libs.deps.json
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\bin\Debug\net8.0\libs.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\bin\Debug\net8.0\libs.pdb
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.AssemblyInfo.cs
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.sourcelink.json
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\refint\libs.dll
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\libs.pdb
+C:\Users\admin\Desktop\BCC\fourthSem\CD\sokubanGame\libs\obj\Debug\net8.0\ref\libs.dll
+=======
 D:\fhstp\04_ss24\csharp_development\SokobanGame\libs\bin\Debug\net8.0\libs.deps.json
 D:\fhstp\04_ss24\csharp_development\SokobanGame\libs\bin\Debug\net8.0\libs.dll
 D:\fhstp\04_ss24\csharp_development\SokobanGame\libs\bin\Debug\net8.0\libs.pdb
@@ -86,3 +101,5 @@ C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\libs\obj\Debug\net8.0\libs.dl
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\libs\obj\Debug\net8.0\refint\libs.dll
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\libs\obj\Debug\net8.0\libs.pdb
 C:\Users\admin\Desktop\BCC\fourthSem\CD\newSokoban\libs\obj\Debug\net8.0\ref\libs.dll
+>>>>>>> 1384355c0f8eab199c97f58d1c70ee469a5092e3
+>>>>>>> 5b73e3e99fd0c3345aa66f76ca5ff8f2595d6154

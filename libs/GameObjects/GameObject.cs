@@ -49,23 +49,23 @@ public class GameObject : IGameObject, IMovement, ICloneable
         set { _charRepresentation = value; }
     }
 
-    public ConsoleColor Color
-    {
-        get { return _color; }
-        set { _color = value; }
-    }
+   public ConsoleColor Color
+{
+    get { return _color; }  // Corrected from 'color' to '_color'
+    set { _color = value; } // Corrected from 'color' to '_color'
+}
 
-    public int PosX
-    {
-        get { return _posX; }
-        set { _posX = value; }
-    }
+public int PosX
+{
+    get { return _posX; }  // Corrected from 'posX' to '_posX'
+    set { _posX = value; } // Corrected from 'posX' to '_posX'
+}
 
-    public int PosY
-    {
-        get { return _posY; }
-        set { _posY = value; }
-    }
+public int PosY
+{
+    get { return _posY; }  // Corrected from 'posY' to '_posY'
+    set { _posY = value; } // Corrected from 'posY' to '_posY'
+}
 
     public int GetPrevPosY()
     {
