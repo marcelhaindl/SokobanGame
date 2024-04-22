@@ -14,11 +14,14 @@ class Program
         // Main game loop
         while (true)
         {
+            
             engine.Render();
-
+            
             // Handle keyboard input
             ConsoleKeyInfo keyInfo = Console.ReadKey(true);
             inputHandler.Handle(keyInfo);
+
+            //FileHandler.SaveAndLoadGame(keyInfo);
         }
     }
 }

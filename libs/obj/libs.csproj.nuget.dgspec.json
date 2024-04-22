@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj": {}
+    "C:\\Users\\hoell\\Desktop\\Fourth Semester\\C Sharp\\BoxMoveGame\\SokobanGame\\libs\\libs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj": {
+    "C:\\Users\\hoell\\Desktop\\Fourth Semester\\C Sharp\\BoxMoveGame\\SokobanGame\\libs\\libs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj",
+        "projectUniqueName": "C:\\Users\\hoell\\Desktop\\Fourth Semester\\C Sharp\\BoxMoveGame\\SokobanGame\\libs\\libs.csproj",
         "projectName": "libs",
-        "projectPath": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\A200002851\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A200002851\\OneDrive - Deutsche Telekom AG\\Projects\\lesson07\\libs\\obj\\",
+        "projectPath": "C:\\Users\\hoell\\Desktop\\Fourth Semester\\C Sharp\\BoxMoveGame\\SokobanGame\\libs\\libs.csproj",
+        "packagesPath": "C:\\Users\\hoell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hoell\\Desktop\\Fourth Semester\\C Sharp\\BoxMoveGame\\SokobanGame\\libs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\A200002851\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\hoell\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,7 +10,7 @@ public class Map {
 
     public Map () {
         _mapWidth = 30;
-        _mapHeight = 8;
+        _mapHeight = 10;
         RepresentationalLayer = new char[_mapHeight, _mapWidth];
         GameObjectLayer = new GameObject[_mapHeight, _mapWidth];
     }
@@ -28,9 +28,9 @@ public class Map {
         GameObjectLayer = new GameObject[_mapHeight, _mapWidth];
 
         // Initialize the map with some default values
-        for (int i = 0; i < GameObjectLayer.GetLength(0); i++)
+        for (int i = 0; i < MapHeight; i++)
         {
-            for (int j = 0; j < GameObjectLayer.GetLength(1); j++)
+            for (int j = 0; j < MapWidth; j++)
             {
                 GameObjectLayer[i, j] = new Floor();
             }
@@ -49,6 +49,8 @@ public class Map {
         set { _mapHeight = value; Initialize();} // Setter
     }
 
+    
+
     public GameObject Get(int x, int y){
         return GameObjectLayer[x, y];
     }
@@ -59,14 +61,12 @@ public class Map {
         int prevPosY = gameObject.GetPrevPosY();
         int prevPosX = gameObject.GetPrevPosX();
         
-        if (prevPosX >= 0 && prevPosX < _mapWidth &&
-                prevPosY >= 0 && prevPosY < _mapHeight)
-        {
-            GameObjectLayer[prevPosY, prevPosX] = new Floor();
-        }
+        // if (prevPosX >= 0 && prevPosX < _mapWidth && prevPosY >= 0 && prevPosY < _mapHeight)
+        // {
+        //     GameObjectLayer[prevPosY, prevPosX] = new Floor();
+        // }
 
-        if (posX >= 0 && posX < _mapWidth &&
-                posY >= 0 && posY < _mapHeight)
+        if (posX >= 0 && posX < _mapWidth && posY >= 0 && posY < _mapHeight)
         {
             GameObjectLayer[posY, posX] = gameObject;
             RepresentationalLayer[gameObject.PosY, gameObject.PosX] = gameObject.CharRepresentation;

@@ -11,9 +11,11 @@ public sealed class GameEngine
     private static GameEngine? _instance;
     private IGameObjectFactory gameObjectFactory;
 
-    public static GameEngine Instance {
-        get{
-            if(_instance == null)
+    public static GameEngine Instance
+    {
+        get
+        {
+            if (_instance == null)
             {
                 _instance = new GameEngine();
             }
@@ -21,7 +23,8 @@ public sealed class GameEngine
         }
     }
 
-    private GameEngine() {
+    private GameEngine()
+    {
         //INIT PROPS HERE IF NEEDED
         gameObjectFactory = new GameObjectFactory();
     }
@@ -32,22 +35,40 @@ public sealed class GameEngine
 
     private List<GameObject> gameObjects = new List<GameObject>();
 
+    //public GameObject getGameObjectsArray() { return gameObjects; }
 
-    public Map GetMap() {
+    public Map GetMap()
+    {
         return map;
     }
 
-    public GameObject GetFocusedObject(){
+    public GameObject GetFocusedObject()
+    {
         return _focusedObject;
     }
 
-    public void Setup(){
+    public GameObject? GetGameObject(Type gameObjectType)
+    {
+        foreach (var gameObject in gameObjects)
+        {
+            if (gameObject.GetType() == gameObjectType)
+            {
+                return gameObject;
+            }
+        }
+        // If no game object of the specified type is found, return null
+        return null;
+    }
 
+
+    public void Setup()
+    {
+        
         //Added for proper display of game characters
         Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         dynamic gameData = FileHandler.ReadJson();
-        
+
         map.MapWidth = gameData.map.width;
         map.MapHeight = gameData.map.height;
 
@@ -55,20 +76,24 @@ public sealed class GameEngine
         {
             AddGameObject(CreateGameObject(gameObject));
         }
-        
+
         _focusedObject = gameObjects.OfType<Player>().First();
 
     }
 
-    public void Render() {
-        
-        //Clean the map
-        Console.Clear();
+public List<GameObject> GetListOfObjects() {
+    return gameObjects;
+}
 
+    public void Render()
+    {
+        
+        Console.Clear();
+                
         map.Initialize();
 
         PlaceGameObjects();
-
+        
         //Render the map
         for (int i = 0; i < map.MapHeight; i++)
         {
@@ -79,35 +104,41 @@ public sealed class GameEngine
             Console.WriteLine();
         }
     }
-    
+
     // Method to create GameObject using the factory from clients
     public GameObject CreateGameObject(dynamic obj)
     {
         return gameObjectFactory.CreateGameObject(obj);
     }
 
-    public void AddGameObject(GameObject gameObject){
+    public void AddGameObject(GameObject gameObject)
+    {
         gameObjects.Add(gameObject);
     }
 
-    private void PlaceGameObjects(){
-        
-        gameObjects.ForEach(delegate(GameObject obj)
+    private void PlaceGameObjects()
+    {
+
+        gameObjects.ForEach(delegate (GameObject obj)
         {
             map.Set(obj);
         });
     }
 
-    private void DrawObject(GameObject gameObject){
-        
+    private void DrawObject(GameObject gameObject)
+    {
+
         Console.ResetColor();
 
-        if(gameObject != null)
+        if (gameObject != null)
         {
+            //Console.SetCursorPosition(gameObject.PosX, gameObject.PosY);
+
             Console.ForegroundColor = gameObject.Color;
             Console.Write(gameObject.CharRepresentation);
         }
-        else{
+        else
+        {
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write(' ');
         }

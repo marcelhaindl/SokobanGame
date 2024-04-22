@@ -10,13 +10,20 @@ public class GameObjectFactory : IGameObjectFactory
         switch (type)
         {
             case (int) GameObjectType.Player:
+            if (obj.Player == true) {
+                break;
+            } else {
                 newObj = obj.ToObject<Player>();
                 break;
+            }
             case (int) GameObjectType.Obstacle:
                 newObj = obj.ToObject<Obstacle>();
                 break;
             case (int) GameObjectType.Box:
                 newObj = obj.ToObject<Box>();
+                break;
+            case (int) GameObjectType.Goal:
+                newObj = obj.ToObject<Goal>();
                 break;
         }
 
