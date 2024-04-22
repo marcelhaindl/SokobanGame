@@ -45,20 +45,20 @@ public class GameObject : IGameObject, IMovement
 
     public ConsoleColor Color
     {
-        get { return color; }
-        set { color = value; }
+        get { return _color; }
+        set { _color = value; }
     }
 
     public int PosX
     {
-        get { return posX; }
-        set { posX = value; }
+        get { return _posX; }
+        set { _posX = value; }
     }
 
     public int PosY
     {
-        get { return posY; }
-        set { posY = value; }
+        get { return _posY; }
+        set { _posY = value; }
     }
 
     public int GetPrevPosY()
@@ -106,7 +106,7 @@ public class GameObject : IGameObject, IMovement
     {
         var saveData = new
         {
-            level = GetCurrentLevel(),
+            Level = GetCurrentLevel(),
             PosX = this._posX,
             PosY = this._posY,
             Color = this._color.ToString(),
@@ -115,7 +115,7 @@ public class GameObject : IGameObject, IMovement
 
         string json = JsonSerializer.Serialize(saveData, new JsonSerializerOptions { WriteIndented = true });
         string filePath = $"../Save.json";
-        Environment.SetEnvironmentVariable("GAME_SETUP_PATH", filePath);
+        //Environment.SetEnvironmentVariable("GAME_SETUP_PATH", filePath);
         File.WriteAllText(filePath, json);
     }
 
@@ -127,25 +127,25 @@ public class GameObject : IGameObject, IMovement
             string json = File.ReadAllText(filePath);
             var loadData = JsonSerializer.Deserialize<JsonElement>(json);
 
-            // Safely extract properties using GetProperty and convert them to appropriate types
-            if (loadData.GetProperty("PosX").TryGetInt32(out int posX))
-                this._posX = posX;
-            else
-                return false;  // Or handle the error appropriately
+            if (!loadData.GetProperty("PosX").TryGetInt32(out int posX) ||
+             !loadData.GetProperty("PosY").TryGetInt32(out int posY) ||
+             string.IsNullOrEmpty(loadData.GetProperty("Color").GetString()) ||
+             string.IsNullOrEmpty(loadData.GetProperty("Type").GetString()) ||
+             !loadData.GetProperty("Level").TryGetInt32(out int level))  // Checking all required properties
+            {
+                Console.WriteLine("Failed to load game state correctly.");
+                return false;
+            }
 
-            if (loadData.GetProperty("PosY").TryGetInt32(out int posY))
-                this._posY = posY;
-            else
-                return false;  // Or handle the error appropriately
-
-            string colorStr = loadData.GetProperty("Color").GetString();
-            this._color = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), colorStr);
-
-            string typeStr = loadData.GetProperty("Type").GetString();
-            this.Type = (GameObjectType)Enum.Parse(typeof(GameObjectType), typeStr);
+            this._posX = posX;
+            this._posY = posY;
+            this._color = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), loadData.GetProperty("Color").GetString());
+            this.Type = (GameObjectType)Enum.Parse(typeof(GameObjectType), loadData.GetProperty("Type").GetString());
+            Environment.SetEnvironmentVariable("CURRENT_LEVEL", level.ToString());  // Set the loaded level into environment variable
 
             return true;
         }
+        Console.WriteLine("No saved game state to load.");
         return false;
     }
 

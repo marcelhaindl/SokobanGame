@@ -1,19 +1,20 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 using System.Text.Json.Nodes;
-
-namespace libs;
-
 using System.Security.Cryptography;
 using Newtonsoft.Json;
+
+namespace libs;
 
 public sealed class GameEngine
 {
     private static GameEngine? _instance;
     private IGameObjectFactory gameObjectFactory;
 
-    public static GameEngine Instance {
-        get{
-            if(_instance == null)
+    public static GameEngine Instance
+    {
+        get
+        {
+            if (_instance == null)
             {
                 _instance = new GameEngine();
             }
@@ -21,7 +22,8 @@ public sealed class GameEngine
         }
     }
 
-    private GameEngine() {
+    private GameEngine()
+    {
         //INIT PROPS HERE IF NEEDED
         gameObjectFactory = new GameObjectFactory();
     }
@@ -32,39 +34,72 @@ public sealed class GameEngine
 
     private List<GameObject> gameObjects = new List<GameObject>();
 
-
-    public Map GetMap() {
+    public Map GetMap()
+    {
         return map;
     }
 
-    public void clearGameobjects() {
+    public void clearGameobjects()
+    {
         gameObjects.Clear();
     }
 
-    public GameObject GetFocusedObject(){
+    public GameObject GetFocusedObject()
+    {
         return _focusedObject;
     }
 
-    public void Setup(){
-
-        //Added for proper display of game characters
+    public void Setup()
+    {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
+        Console.WriteLine("Setting up game...");
 
-        dynamic gameData = FileHandler.ReadJson();
-        
-        map.MapWidth = gameData.map.width;
-        map.MapHeight = gameData.map.height;
-
-        foreach (var gameObject in gameData.gameObjects)
+        try
         {
-            AddGameObject(CreateGameObject(gameObject));
+            // Correct usage of static class method
+            dynamic gameData = FileHandler.ReadJson();
+
+            if (gameData == null)
+            {
+                Console.WriteLine("Error: Game data could not be loaded.");
+                return;
+            }
+
+            // Process game data
+            map.MapWidth = gameData.map.width;
+            map.MapHeight = gameData.map.height;
+            foreach (var gameObject in gameData.gameObjects)
+            {
+                if (gameObject == null)
+                {
+                    Console.WriteLine("Warning: Skipping a null gameObject in setup.");
+                    continue;
+                }
+                AddGameObject(CreateGameObject(gameObject));
+            }
+
+            _focusedObject = gameObjects.OfType<Player>().FirstOrDefault();
+            if (_focusedObject == null)
+            {
+                Console.WriteLine("Error: No player object found in game data.");
+            }
         }
-        
-        _focusedObject = gameObjects.OfType<Player>().First();
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred during setup: {ex.Message}");
+        }
+
+        // foreach (var gameObject in gameData.gameObjects)
+        // {
+        //     AddGameObject(CreateGameObject(gameObject));
+        // }
+
+        // _focusedObject = gameObjects.OfType<Player>().First();
     }
 
-    public void Render() {
-        
+    public void Render()
+    {
+
         //Clean the map
         Console.Clear();
 
@@ -82,7 +117,7 @@ public sealed class GameEngine
             Console.WriteLine();
         }
     }
-    
+
     // Method to create GameObject using the factory from clients
     public GameObject CreateGameObject(dynamic obj)
     {
@@ -95,29 +130,33 @@ public sealed class GameEngine
         return gameObjects.Where(x => x.Type == GameObjectType.Box).ToList();
     }
 
-    public void AddGameObject(GameObject gameObject){
+    public void AddGameObject(GameObject gameObject)
+    {
         gameObjects.Add(gameObject);
     }
 
-    private void PlaceGameObjects(){
-        
-        gameObjects.ForEach(delegate(GameObject obj)
+    private void PlaceGameObjects()
+    {
+
+        gameObjects.ForEach(delegate (GameObject obj)
         {
             map.Set(obj);
         });
         map.Set(_focusedObject);
     }
 
-    private void DrawObject(GameObject gameObject){
-        
+    private void DrawObject(GameObject gameObject)
+    {
+
         Console.ResetColor();
 
-        if(gameObject != null)
+        if (gameObject != null)
         {
             Console.ForegroundColor = gameObject.Color;
             Console.Write(gameObject.CharRepresentation);
         }
-        else{
+        else
+        {
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.Write(' ');
         }
