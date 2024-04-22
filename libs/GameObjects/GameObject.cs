@@ -118,15 +118,50 @@ public class GameObject : IGameObject, IMovement, ICloneable
         return move;
     }
 
-    public void CheckWin()
+    public int GetCurrentLevel()
     {
-        if (GameEngine.Instance.GetBoxes().All(x => x.Color == ConsoleColor.Green))
+        string currentLevelStr = Environment.GetEnvironmentVariable("CURRENT_LEVEL");
+        if (!string.IsNullOrEmpty(currentLevelStr) && int.TryParse(currentLevelStr, out int currentLevel))
         {
-            Console.Clear();
-            Console.WriteLine("You win!");
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
-            Environment.Exit(0);
+            return currentLevel;
+        }
+        // Default to level 1 if the environment variable is not set or invalid
+        return 1;
+    }
+
+    public void CheckWin() {
+        if(GameEngine.Instance.GetBoxes().All(x => x.Color == ConsoleColor.Green)) {
+            int currentLevel = GetCurrentLevel();
+            GameEngine.Instance.clearGameobjects();
+
+            // Increment the level after winning
+            currentLevel++;
+
+            // Determine the next level setup JSON file path
+            string nextLevelPath = $"../Setup_Level{currentLevel}.json";
+
+            // Check if the next level setup file exists
+            if (File.Exists(nextLevelPath)) {
+                Console.Clear();
+                Console.WriteLine("You win!");
+
+                // Set the environment variable to the path of the next level JSON file
+                Environment.SetEnvironmentVariable("GAME_SETUP_PATH", nextLevelPath);
+
+                Console.WriteLine("Press any key to continue to the next level...");
+                Console.ReadKey();
+
+                // Update the current level in the environment variable
+                Environment.SetEnvironmentVariable("CURRENT_LEVEL", currentLevel.ToString());
+
+                // Restart the game with the new setup
+                GameEngine.Instance.Setup();
+            } else {
+                // Handle the case when there are no more levels available
+                Console.WriteLine("Congratulations! You have completed all levels.");
+                // Optionally, exit the game or perform other actions
+                Environment.Exit(0);
+            }
         }
     }
 }

@@ -43,6 +43,10 @@ public sealed class GameEngine
         return map;
     }
 
+    public void clearGameobjects() {
+        gameObjects.Clear();
+    }
+
     public GameObject GetFocusedObject()
     {
         return _focusedObject;
