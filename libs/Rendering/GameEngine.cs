@@ -117,9 +117,9 @@ public sealed class GameEngine
         if (savedObjectsStack.Count > 1)
         {
             savedObjectsStack.RemoveAt(savedObjectsStack.Count - 1);
-            gameObjects = savedObjectsStack.Last();
-            Render();
-        }
+        } 
+        gameObjects = savedObjectsStack.Last();
+        Render();
     }
 
     private void PlaceGameObjects()
