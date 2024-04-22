@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\game\\game.csproj": {}
+    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\game\\game.csproj": {
+    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\game\\game.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj",
         "projectName": "game",
-        "projectPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\game\\game.csproj",
-        "packagesPath": "C:\\Users\\Mesza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\game\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\game.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\game\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mesza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj": {
-                "projectPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj"
+              "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj": {
+                "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj"
               }
             }
           }
@@ -38,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -64,21 +63,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj": {
+    "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj",
         "projectName": "libs",
-        "projectPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj",
-        "packagesPath": "C:\\Users\\Mesza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mesza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,11 +101,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -130,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ga7YSX4WioBMp8SBqCHqzedJC5Bc0qfE79OHr4+19JTV++3skkIw9v1ukSQcHyAA5e15GCbceIANEiAgo+S8Qw==",
+  "dgSpecHash": "dCxo2010hlDJ9cNPZpeXzZeMavvsWx6Z4H5ZF9xZ6bStO+LMRrZ9KsqsbnCti/jSrskVAbLT36m9xPczB+ovpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mesza\\OneDrive\\Desktop\\SokobanGame_Szabolcs\\libs\\libs.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\BCC\\fourthSem\\CD\\newSokoban\\libs\\libs.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mesza\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

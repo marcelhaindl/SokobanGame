@@ -1,14 +1,14 @@
 ﻿using libs;
 
 class Program
-{    
+{
     static void Main(string[] args)
     {
         //Setup
         Console.CursorVisible = false;
         var engine = GameEngine.Instance;
         var inputHandler = InputHandler.Instance;
-        
+
         engine.Setup();
 
         // Main game loop
