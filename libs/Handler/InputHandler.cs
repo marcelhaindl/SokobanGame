@@ -55,6 +55,9 @@ public sealed class InputHandler
                 case ConsoleKey.RightArrow:
                     focusedObject.Move(1, 0);
                     break;
+                case ConsoleKey.Spacebar:
+                    GameEngine.Instance.LoadPreviousState();
+                    break;
                 default:
                     break;
             }

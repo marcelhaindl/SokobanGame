@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace libs;
 
-public class GameObject : IGameObject, IMovement
+public class GameObject : IGameObject, IMovement, ICloneable
 {
     private char _charRepresentation = '#';
 
@@ -36,6 +36,12 @@ public class GameObject : IGameObject, IMovement
         this._posY = posY;
         this._color = color;
     }
+
+    public object Clone()
+    {
+        return MemberwiseClone();
+    }
+
 
     public char CharRepresentation
     {
@@ -97,6 +103,10 @@ public class GameObject : IGameObject, IMovement
             _prevPosY = _posY;
             _posX += dx;
             _posY += dy;
+            if (GameEngine.Instance.GetMap().Get(_posY - dy, _posX - dx).Type == GameObjectType.Player)
+            {
+                GameEngine.Instance.SaveCurrentState();
+            }
             CheckWin();
         }
         return move;

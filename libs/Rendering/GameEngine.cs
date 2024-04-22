@@ -32,6 +32,8 @@ public sealed class GameEngine
 
     private Map map = new Map();
 
+    private List<List<GameObject>> savedObjectsStack = new List<List<GameObject>>();
+
     private List<GameObject> gameObjects = new List<GameObject>();
 
     public Map GetMap()
@@ -78,7 +80,9 @@ public sealed class GameEngine
                 AddGameObject(CreateGameObject(gameObject));
             }
 
+            savedObjectsStack.Add(gameObjects.Select(x => (GameObject)x.Clone()).ToList());
             _focusedObject = gameObjects.OfType<Player>().FirstOrDefault();
+
             if (_focusedObject == null)
             {
                 Console.WriteLine("Error: No player object found in game data.");
@@ -135,6 +139,22 @@ public sealed class GameEngine
         gameObjects.Add(gameObject);
     }
 
+    public void SaveCurrentState()
+    {
+        savedObjectsStack.Add(gameObjects.Select(x => (GameObject)x.Clone()).ToList());
+    }
+
+    public void LoadPreviousState()
+    {
+        if (savedObjectsStack.Count > 1)
+        {
+            savedObjectsStack.RemoveAt(savedObjectsStack.Count - 1);
+        }
+        gameObjects = savedObjectsStack.Last();
+        Render();
+    }
+
+
     private void PlaceGameObjects()
     {
 
@@ -142,6 +162,7 @@ public sealed class GameEngine
         {
             map.Set(obj);
         });
+        _focusedObject = gameObjects.FirstOrDefault(x => x.Type == GameObjectType.Player);
         map.Set(_focusedObject);
     }
 
